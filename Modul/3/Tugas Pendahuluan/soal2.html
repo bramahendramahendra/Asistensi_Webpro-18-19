@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soal 2</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body onload="popup()">
+	<div class="main">
+		<div class="form-group">
+	      	<label>Nama</label>
+	      	<input type="text" class="form-control" id="nama" readonly>
+	    </div>
+		<div class="form-group">
+	      	<label>NIM</label>
+	      	<input type="text" class="form-control" id="nim" readonly>
+	    </div>
+	</div>
+	
+	<script type="text/javascript">
+		function popup() {
+			var nama = prompt("Masukkan nama kamu:");
+			var nim = prompt("Masukkan nim kamu:");
+
+			document.getElementById("nama").value = nama;
+			document.getElementById("nim").value = nim;
+		}
+	</script>
+</body>
+</html>

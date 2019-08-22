@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>[NIM]</title>
+    <link rel="icon" type="image/png" href="image/iflab_logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"><!--bootstrap 4 css library-->
+    <script src="assets/jquery.min.js"></script><!--jquery Library-->
+    <script src="assets/plotly-latest.min.js"></script><!--plot.ly library-->
+    <style>
+        li.nav-item{font-weight: bold}
+        li.nav-item:hover{background-color: white;border-radius: 15px;}
+        p.titles{font-weight: bold;color: blue;margin-top: 20px}
+    </style>
+</head>
+<body style="background-color:#3498db">
+    <!--Navigation-->
+    <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top" style="background-color:#2980b9">
+            <a href="#" class="navbar-brand"><img src="image/iflab_logo2.png" alt="iflab" style="height:50px;width:50px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link"href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"href="#konten-a">KONTEN A</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"href="#konten-b">KONTEN B</a>
+                    </li>
+                </ul>
+                <form class="form-inline ml-auto" action="#">
+                    <div class="container">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-dark" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!--Carousel-->
+    <div class="jumbotron jumbotron-fluid bg-light" style="margin-top: 65px;">
+        <div class="container" align="center">
+            <div id="konten" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#konten" data-slide-to="0" class="active"></li>
+                    <li data-target="#konten" data-slide-to="1"></li>
+                    <li data-target="#konten" data-slide-to="2"></li>
+                </ul>    
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="image/img1.png" alt="iflab" width="90%">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="image/img2.png" alt="iflab" width="90%">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="image/img3.png" alt="iflab" width="90%">
+                    </div>
+                </div>     
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#konten" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#konten" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--tagline 1-->
+    <div  class="jumbotron jumbotron-fluid bg-light" style="padding: 10px">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 align="center">Nice Day</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--konten A-->
+    <div id="konten-a" class="jumbotron jumbotron-fluid bg-light">
+        <div class="container-fluid" align="center">
+            <div><h1 style="margin-bottom:20px" class="text-warning">KONTEN GRAFIK JAVASCRIPT</h1></div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div id="GRAFIK-A" style="height:300px;"></div>
+                    <p class="titles">CHART CONTENT 1</p>
+                </div>
+                <div class="col-sm-4">
+                    <div id="GRAFIK-B" style="height:300px"></div>
+                    <p class="titles">CHART CONTENT 2</p>
+                </div>
+                <div class="col-sm-4">
+                    <div id="GRAFIK-C" style="height:300px"></div>
+                    <p class="titles">CHART CONTENT 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--tagline 1-->
+    <div  class="jumbotron jumbotron-fluid bg-light" style="padding: 10px">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 align="center">Keep Spirit</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--konten B-->
+    <div id="konten-b">
+        <div class="container-fluid">
+             <div class="row">
+                 <div class="col-sm-6">
+                    <div class="jumbotron jumbotron-fluid bg-light" style="height:520px">
+                        <div class="container" align="center" style="margin-top:160px">
+                            <div class="btn btn-warning" style="width: 200px;" onclick="openForm()">PANGGIL FORM</div>
+                            <div class="btn btn-success" style="width: 200px;" onclick="openTable()">PANGGIL TABEL</div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-sm-6">
+                    <div  class="jumbotron jumbotron-fluid bg-light" style="height:520px">
+                        <div id="muncul1" style="display:none" class="container" align="center">
+                            <div class="card" style="width:50%">
+                                <div class="card-header bg-warning">Form Login</div>
+                                <div class="card-body bg-info">
+                                    <form action="#">
+                                        <div class="form-group" align="Left">
+                                        <label for="email">Email address:</label>
+                                        <input type="email" class="form-control" id="email">
+                                        </div>
+                                        <div class="form-group"  align="Left">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd">
+                                        </div>
+                                        <div class="form-group form-check"  align="Left">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox"> Remember me
+                                        </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-success">Submit</button>
+                                    </form>
+                                    </div> 
+                                <div class="card-footer bg-warning">belum punya akun?<a href="#"> klik disini</a></div>
+                            </div>
+                        </div>
+                        <div id="muncul2" style="display:none" class="container">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>John</td>
+                                    <td>John Conor</td>
+                                    <td>johnconor@iflab.com</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Bagba</td>
+                                    <td>Bagas Bagus</td>
+                                    <td>bagasbagus@iflab.com</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Kevin</td>
+                                    <td>Kevin Pratama</td>
+                                    <td>kevinpratama@iflab.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <footer class="container-fluid" align="center" >
+        <h style="color:white">@IFlab 2018/2019</h>
+        <P style="color:white;">Design By @SomeOne</P>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="assets/js/bootstrap.min.js"></script><!--bootstrap 4 js library-->
+<script src="assets/grafik.js"></script>
+</html>

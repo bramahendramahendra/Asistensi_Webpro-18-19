@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Soal Tes Akhir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- LOAD CSS HERE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Put Your HTML Code Here -->
+        <div align="center" style="margin-bottom:2%;">
+            <!--Load Image and image off Here-->
+            <img src="img/off.svg" id="off">
+            <img src="img/on.svg" id="on">
+             <!-- End Of Load Image -->
+           
+        </div>
+        <div align="center">
+            <h1>Mati</h1>
+            <button id="btn_on">On</button>
+            <button id="btn_off">Off</button>
+        </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>
+
+// Load Your JQuery Function Here
+
+$(document).ready(function(){
+    $('#on').hide();
+
+    // Code your JQuery DOM here
+
+    $('#btn_on').click(function(){
+        $("body").css("background-color", "black");
+        $("h1").text("nyala");
+        $("h1").css("color","white");
+        $('#on').show();
+        $('#off').hide();
+    })
+
+    $('#btn_off').click(function(){
+        $("body").css("background-color", "white");
+        $("h1").text("mati");
+        $("h1").css("color","black");
+        $('#on').hide();
+        $('#off').show();
+    })
+})
+
+</script>
+</body>
+</html>

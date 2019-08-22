@@ -1,0 +1,12 @@
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+h1{
+    text-transform: capitalize;
+}
+img{
+    height: 400px;
+}
+button {
+    font-size: 40px;
+}

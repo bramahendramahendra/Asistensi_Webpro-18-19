@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Soal No.4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div>
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
+        <button id="up">Up</button>
+        <button id="left">Left</button>
+        <button id="right">Right</button>
+    </div>
+    
+    </div>
+    <div class="bean">
+        <img src="img/boo.png" id="boo">
+        <h1>Active Button:<span id="pos"></span></h1>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#boo').hide();
+        $('h1').hide();
+
+        $('#show').click(function(){
+            $('h1').show();
+            $('#boo').show();
+            var p = $(this).text();
+            $('#pos').text(p);
+        })
+
+        $('#hide').click(function(){
+            $('#boo').hide();
+            var p = $(this).text();
+            $('#pos').text(p);
+        })
+        
+        $('#up').click(function(){
+            $('#boo').css('transform','rotatex(180deg)');
+            var p = $(this).text();
+            $('#pos').text(p);
+        })
+
+        $('#left').click(function(){
+            $('#boo').css('transform','rotatex(0deg)');
+            var p = $(this).text();
+            $('#pos').text(p);
+        })
+
+        $('#right').click(function(){
+            $('#boo').css('transform','rotateY(180deg)');
+            var p = $(this).text();
+            $('#pos').text(p);
+        })
+    })
+</script>
+</body>
+</html>

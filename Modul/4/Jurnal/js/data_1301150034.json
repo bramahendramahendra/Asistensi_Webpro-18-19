@@ -1,0 +1,59 @@
+{
+    "title": "CV Paujan",
+    "bio": [{
+        "nama": "Paujan Hakim",
+        "nim":"1301171234",
+        "job": "Mahasiswa S1 Teknik Informatika Univ. Telkom",
+        "birth": "Jakarta, 12 Februari 1996",
+        "address": "Pamulang, South Tangerang, Banten, 15417",
+        "phone": "+62 878 8494 1888",
+        "email": "paujan@mail.com",
+        "profile": "Saya seorang mahasiswa sarjana Teknik Informatika di Universitas Telkom. Saya tertarik pada Web Development sejak 2010."
+    }],
+    "prof_pict":"img/boy.png",
+    "socmed":
+    [
+        {
+            "twitter":"http://twitter.com/ramaadtym"
+        },
+        {
+           "ig":"http://instagram.com/ramaadtym"
+        }
+    ],
+    "skills":[
+        {
+            "name":"HTML & CSS",
+            "percent":"90"
+        },
+        {
+            "name":"JavaScript",
+            "percent":"20"
+        },
+        {
+            "name":"PHP",
+            "percent":"85"
+        }
+    ],
+    "education":[
+        {
+            "name":"Madrasah Pembangunan UIN Jakarta",
+            "start_year":"2002",
+            "end_year":"2008"
+        },
+        {
+            "name":"Madrasah Tsanawiyah Negeri 3 Jakarta",
+            "start_year":"2008",
+            "end_year":"2011"
+        },
+        {
+            "name":"Madrasah Aliyah Negeri 4 Jakarta",
+            "start_year":"2011",
+            "end_year":"2014"
+        },
+        {
+            "name":"Telkom University",
+            "start_year":"2015",
+            "end_year":"2019"
+        }
+    ]
+}

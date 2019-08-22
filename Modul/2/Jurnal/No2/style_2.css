@@ -1,0 +1,23 @@
+.linear{
+	background-image: linear-gradient(90deg, red, yellow);
+}
+
+.radial{
+	background: 
+    repeating-radial-gradient(
+      circle at 0 0, 
+      #eee,
+      #ccc 50px
+    );
+}
+
+.foto {
+	width: 500px;
+	height: 500px;
+	background: url("foto_1.png") no-repeat;
+	display: inline-block;
+}
+
+.foto:hover {
+	background: url("foto_2.png") no-repeat
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soal 1</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="main">
+		<center>
+			<div class="title">Hitung Pythagoras</div>
+		</center>
+		<div class="form-group">
+	      	<label>A</label>
+	      	<input type="number" class="form-control" id="a">
+	    </div>
+	    <div class="form-group">
+	      	<label>B</label>
+	      	<input type="number" class="form-control" id="b">
+	    </div>
+	    <button onclick="hitungPythagoras()" class="btn btn-primary">Hitung!</button>
+	    <div class="form-group" style="margin:20px 0px 5px 0px;">
+	      	<label>Hasil</label>
+	      	<input type="number" class="form-control" id="hasil" readonly>
+	    </div>
+	</div>
+	
+	<script type="text/javascript">
+		function hitungPythagoras() {
+			a = document.getElementById("a").value;
+			b = document.getElementById("b").value;
+
+			c = Math.sqrt((a*a) + (b*b));
+			document.getElementById("hasil").value = c;
+		}
+	</script>
+</body>
+</html>

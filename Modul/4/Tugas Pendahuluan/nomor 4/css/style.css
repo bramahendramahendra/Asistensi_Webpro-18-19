@@ -1,0 +1,11 @@
+.bean{
+    display:flex;
+}
+h1{
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:4%;
+}
+button{
+    font-size:40px;
+}

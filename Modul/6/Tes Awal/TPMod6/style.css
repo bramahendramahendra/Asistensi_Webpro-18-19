@@ -1,0 +1,112 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+  border-radius: 0.2em;
+  border: 1px solid #9E9E9E;
+  padding: .3em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  height: 25px;
+  border-radius: 0.2em;
+  border: 1px solid #9E9E9E;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.content {
+  position: relative;
+  top: 25%;
+}
+
+.content .input, .content .show, .content .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .input h1, .content .show h1, .content .login h1 {
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+
+.content .input form, .content .show form, .content .login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .input form button, .content .show form button, .content .login form button {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.content .input form input, .content .show form input, .content .login form input {
+  margin-bottom: 1em;
+}
+
+.content .input form table, .content .show form table, .content .login form table {
+  border-collapse: collapse;
+}
+
+.content .show table {
+  border-collapse: collapse;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.content .show table, .content .show th, .content .show td {
+  border: 1px solid #9E9E9E;
+}
+
+.content .show th, .content .show td {
+  padding: 1em;
+}
+
+.content .show td {
+  width: 5em;
+}
+
+.content .show a {
+  color: black;
+  border-radius: 0.2em;
+  margin-top: 1em;
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  background-color: #9E9E9E;
+}
+/*# sourceMappingURL=style.css.map */

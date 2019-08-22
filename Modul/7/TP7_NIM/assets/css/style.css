@@ -1,0 +1,13 @@
+.circle {
+	height: 380px;
+	width: 380px;
+	border-radius: 250px 250px;
+}
+
+.gradient{
+	background: #F8D353;
+background: -webkit-linear-gradient(top left, #F8D353, #FF5C5A);
+background: -moz-linear-gradient(top left, #F8D353, #FF5C5A);
+background: linear-gradient(top left, #F8D353, #FF5C5A);
+
+}

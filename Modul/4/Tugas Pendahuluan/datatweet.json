@@ -1,0 +1,67 @@
+[
+  {
+    "text": "1\/ Today we\u2019re sharing our vision for the future of the Twitter API platform!\nhttps:\/\/t.co\/XweGngmxlP",
+    "timestamp": "Thu Apr 06 15:24:15 +0000 2017",
+    "favourite_count": "80",
+    "retweet_count": "75",
+      "user": {
+        "screen_name": "TwitterDev",
+        "name": "Twitter Dev",
+        "followers_count": "1000",
+        "friends_count": "500",
+        "url_image": "twitter.png"
+      }
+  },
+  {
+    "text": "We're delighted to announce #MUFC have won again! #FULMUN",
+    "timestamp": "Thu Apr 06 15:24:15 +0000 2017",
+    "favourite_count": "7,747",
+    "retweet_count": "22.5K",
+      "user": {
+        "screen_name": "ManUtd",
+        "name": "Manchester United",
+        "followers_count": "18.7M",
+        "friends_count": "134",
+        "url_image": "mu.png"
+      }
+  },
+  {
+    "text": "Radovic Minta Pemain Fokus Hadapi Pertandingan",
+    "timestamp": "Thu Apr 06 15:24:15 +0000 2017",
+    "favourite_count": "100",
+    "retweet_count": "8",
+      "user": {
+        "screen_name": "persib",
+        "name": "Persib",
+        "followers_count": "3.2M",
+        "friends_count": "86",
+        "url_image": "PERSIB.png"
+      }
+  },
+  {
+    "text": "Paul Pogba Ingin Manchester United Lanjutkan Tren Positif",
+    "timestamp": "Thu Apr 06 15:24:15 +0000 2017",
+    "favourite_count": "10",
+    "retweet_count": "15",
+      "user": {
+        "screen_name": "GOAL_ID",
+        "name": "Goal Indonesia",
+        "followers_count": "2.1M",
+        "friends_count": "495",
+        "url_image": "goal.png"
+      }
+  },
+  {
+    "text": "Grandi ragazzi! Forza Juve #finoallafine",
+    "timestamp": "Thu Apr 06 15:24:15 +0000 2017",
+    "favourite_count": "200k",
+    "retweet_count": "100k",
+      "user": {
+        "screen_name": "Cristiano",
+        "name": "Cristiano Ronaldo",
+        "followers_count": "76.5M",
+        "friends_count": "103",
+        "url_image": "cr7.jpg"
+      }
+  }
+]
